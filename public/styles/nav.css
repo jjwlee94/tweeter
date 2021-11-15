@@ -1,0 +1,33 @@
+nav {
+  color: #ffffff;
+  background-color: #4056a1;
+  height: 120px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+}
+
+span {
+  display: flex;
+  align-self: center;
+  font-family: "Bungee", cursive;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+}
+
+.a {
+  display: flex;
+  align-self: center;
+}
+
+.b {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+}
