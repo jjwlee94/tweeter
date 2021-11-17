@@ -55,17 +55,25 @@ $(document).ready(function () {
     }
   };
 
-  renderTweets(data);
-
   $("#new-tweet-form").submit(function (event) {
     event.preventDefault();
-    const tweet = $(this).serialize();
-    $.post("/tweets", tweet);
+
+    const input = $(this).children("textarea").val();
+    if (!input) {
+      alert("Please submit a tweet!");
+    } else if (input.length > 140) {
+      alert(
+        "You have exceeded the 140 character limit. Please submit a shorter tweet"
+      );
+    } else {
+      const tweets = $(this).serialize();
+      $.post("/tweets", tweets);
+    }
   });
 
   const loadTweets = function () {
-    $.get("/tweets", function (tweet) {
-      renderTweets(tweet);
+    $.get("/tweets", function (tweets) {
+      renderTweets(tweets);
     });
   };
 
