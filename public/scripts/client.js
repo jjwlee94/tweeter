@@ -1,28 +1,11 @@
 $(document).ready(function () {
-  const data = [
-    // {
-    //   user: {
-    //     name: "Newton",
-    //     avatars: "https://i.imgur.com/73hZDYK.png",
-    //     handle: "@SirIsaac",
-    //   },
-    //   content: {
-    //     text: "If I have seen further it is by standing on the shoulders of giants",
-    //   },
-    //   created_at: 1461116232227,
-    // },
-    // {
-    //   user: {
-    //     name: "Descartes",
-    //     avatars: "https://i.imgur.com/nlhLi3I.png",
-    //     handle: "@rd",
-    //   },
-    //   content: {
-    //     text: "Je pense , donc je suis",
-    //   },
-    //   created_at: 1461113959088,
-    // },
-  ];
+  const data = [];
+
+  const escape = function (str) {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
 
   const createTweetElement = function (tweet) {
     const $tweet = $(`<article class="tweet">
@@ -35,7 +18,7 @@ $(document).ready(function () {
           <h4 class="user-handle">${tweet.user.handle}</h4>
         </div>
       </div>
-      <div class="tweet-text">${tweet.content.text}</div>
+      <div class="tweet-text">${escape(tweet.content.text)}</div>
       <footer class="tweet-footer">
         <span class="timeago">${timeago.format(tweet.created_at)}</span>
         <div class="tweet-response">
