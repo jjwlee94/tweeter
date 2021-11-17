@@ -1,21 +1,21 @@
-.all-tweets {
+section#tweets-container {
   display: flex;
   flex-direction: column;
   padding: 1.5em;
 }
 
-.all-tweets article {
+article.tweet {
   border-style: solid;
   border-width: thick;
   padding: 1em;
   margin-bottom: 20px;
 }
 
-.all-tweets article.tweet:hover {
+article.tweet:hover {
   box-shadow: 5px 5px 1px 2px rgba(64, 86, 161, 0.4);
 }
 
-.all-tweets div.tweet-header {
+.tweet-header {
   height: 100px;
   width: 100%;
   display: flex;
@@ -24,22 +24,22 @@
   justify-content: space-between;
 }
 
-.all-tweets div.user-profile {
+.user-profile {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.all-tweets h4.user-name {
+.user-name {
   padding: 0.5em;
   font-weight: 300;
 }
 
-.all-tweets div.tweet-text {
+article.tweet-text {
   font-weight: 600;
 }
 
-.all-tweets footer {
+footer.tweet-footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -50,7 +50,7 @@
   border-width: thick;
 }
 
-.all-tweets div.tweet-response {
+.tweet-response {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -58,15 +58,15 @@
   color: #4056a1;
 }
 
-.all-tweets i:hover {
+i:hover {
   color: gold;
 }
 
-.all-tweets span.tweet-date {
+span.timeago {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 75%;
 }
 
-.all-tweets i.fa-retweet {
+i.fas.fa-retweet {
   padding: 0.5em;
 }
