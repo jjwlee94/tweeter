@@ -8,6 +8,11 @@
   border-style: solid;
   border-width: thick;
   padding: 1em;
+  margin-bottom: 20px;
+}
+
+.all-tweets article.tweet:hover {
+  box-shadow: 5px 5px 1px 2px rgba(64, 86, 161, 0.4);
 }
 
 .all-tweets div.tweet-header {
@@ -25,16 +30,13 @@
   align-items: center;
 }
 
-.all-tweets h4 {
+.all-tweets h4.user-name {
   padding: 0.5em;
   font-weight: 300;
 }
 
 .all-tweets div.tweet-text {
   font-weight: 600;
-  border-style: none;
-  border-bottom-style: solid;
-  border-width: thick;
 }
 
 .all-tweets footer {
@@ -43,6 +45,9 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 10px;
+  border-style: none;
+  border-top-style: solid;
+  border-width: thick;
 }
 
 .all-tweets div.tweet-response {
@@ -50,10 +55,18 @@
   justify-content: flex-end;
   align-items: center;
   flex-direction: row;
+  color: #4056a1;
+}
+
+.all-tweets i:hover {
+  color: gold;
 }
 
 .all-tweets span.tweet-date {
-  display: flex;
-  align-self: center;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 75%;
+}
+
+.all-tweets i.fa-retweet {
+  padding: 0.5em;
 }
