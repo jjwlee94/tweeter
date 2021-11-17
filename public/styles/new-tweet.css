@@ -13,7 +13,7 @@
 .new-tweet textarea {
   display: flex;
   flex-direction: column;
-  height: 40px;
+  height: 35px;
   width: 100%;
   outline: none;
   border-style: none;
@@ -22,6 +22,8 @@
   color: #545149;
   background-color: #f4f1ec;
   resize: none;
+  font-size: 75%;
+  font-weight: 600;
 }
 
 .new-tweet div {
@@ -35,7 +37,12 @@
   display: flex;
   color: #ffffff;
   background-color: #4056a1;
-  border: none;
+  border-color: #4056a1;
+  border-style: double;
+}
+
+button:hover {
+  border-color: #545149;
 }
 
 .new-tweet output {
