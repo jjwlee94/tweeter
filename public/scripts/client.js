@@ -1,6 +1,9 @@
 $(document).ready(function () {
   const data = [];
 
+  $("#empty-tweet").hide();
+  $("#long-tweet").hide();
+
   const escape = function (str) {
     let div = document.createElement("div");
     div.appendChild(document.createTextNode(str));
@@ -43,12 +46,16 @@ $(document).ready(function () {
     event.preventDefault();
 
     const input = $(this).find("textarea").val();
+
+    $("#empty-tweet").slideUp();
+    $("#long-tweet").slideUp();
+
     if (!input) {
-      alert("Please submit a tweet!");
+      $("#empty-tweet").slideDown();
+      $("#long-tweet").hide();
     } else if (input.length > 140) {
-      alert(
-        "You have exceeded the 140 character limit. Please submit a shorter tweet"
-      );
+      $("#long-tweet").slideDown();
+      $("#empty-tweet").hide();
     } else {
       const tweets = $(this).serialize();
       $.post("/tweets", tweets, () => {

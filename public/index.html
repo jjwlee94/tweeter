@@ -68,8 +68,22 @@
 
     <!-- Page-specific (main) content here -->
     <main class="container"></main>
+    <!-- Submitting a new tweet -->
     <section class="new-tweet">
       <h2>Compose Tweet</h2>
+
+      <span class="empty-tweet" id="empty-tweet">
+        <i class="fas fa-exclamation-triangle" style="color: red"></i>
+        Please submit a tweet!
+        <i class="fas fa-exclamation-triangle" style="color: red"></i>
+      </span>
+      <span class="long-tweet" id="long-tweet">
+        <i class="fas fa-exclamation-triangle" style="color: red"></i>
+        You have exceeded the 140 character limit. Please submit a shorter
+        tweet!
+        <i class="fas fa-exclamation-triangle" style="color: red"></i>
+      </span>
+
       <form action="/tweets" method="POST" id="new-tweet-form">
         <label for="textarea">What are you humming about?</label>
         <textarea name="text" id="tweet-text"></textarea>
@@ -79,7 +93,7 @@
         </div>
       </form>
     </section>
-
+    <!-- All tweets -->
     <section id="tweets-container"></section>
   </body>
 </html>
