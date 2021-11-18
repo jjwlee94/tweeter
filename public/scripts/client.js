@@ -1,6 +1,7 @@
 $(document).ready(function () {
   const data = [];
 
+  // Hide error messages as default
   $("#empty-tweet").hide();
   $("#long-tweet").hide();
 
@@ -38,7 +39,7 @@ $(document).ready(function () {
     $("#tweets-container").empty();
     for (let tweet of tweets) {
       const $tweet = createTweetElement(tweet);
-      $("#tweets-container").append($tweet);
+      $("#tweets-container").prepend($tweet);
     }
   };
 
@@ -47,19 +48,23 @@ $(document).ready(function () {
 
     const input = $(this).find("textarea").val();
 
-    $("#empty-tweet").slideUp();
-    $("#long-tweet").slideUp();
-
     if (!input) {
+      // Show empty tweet error
       $("#empty-tweet").slideDown();
       $("#long-tweet").hide();
     } else if (input.length > 140) {
+      // Show long tweet error
       $("#long-tweet").slideDown();
       $("#empty-tweet").hide();
     } else {
       const tweets = $(this).serialize();
       $.post("/tweets", tweets, () => {
+        // Reset error messages
+        $("#empty-tweet").slideUp();
+        $("#long-tweet").slideUp();
+        // Reset textarea
         $(this).find("#tweet-text").val("");
+        // Reset counter to 140 char
         $(this).find(".counter").val(140);
         loadTweets();
       });
@@ -68,7 +73,7 @@ $(document).ready(function () {
 
   const loadTweets = function () {
     $.get("/tweets", function (tweets) {}).then((result) => {
-      renderTweets(result.reverse());
+      renderTweets(result);
     });
   };
 

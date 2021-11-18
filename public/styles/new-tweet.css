@@ -2,11 +2,12 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 1.5em;
+  padding: 1.5rem;
 }
 
 .new-tweet h2 {
-  margin-block: 0.5em;
+  margin-block: 0.5rem;
+  font-size: 2rem;
 }
 
 .new-tweet span {

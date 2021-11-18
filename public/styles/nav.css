@@ -1,6 +1,4 @@
 nav {
-  color: #ffffff;
-  background-color: #4056a1;
   height: 120px;
   width: 100%;
   display: flex;
@@ -9,22 +7,30 @@ nav {
   top: 0;
 }
 
+/* Contents */
 span {
   display: flex;
   align-self: center;
-  font-family: "Bungee", cursive;
-  padding: 1.5em;
+  padding: 1.5rem;
 }
 
 .logo {
   display: flex;
   align-self: center;
   font-size: 120%;
+  font-family: "Bungee", cursive;
 }
 
 .write-tweet {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+}
+
+/* Text */
+p {
+  display: flex;
+  align-self: center;
+  font-size: 1rem;
 }

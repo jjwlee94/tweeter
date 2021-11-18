@@ -2,13 +2,13 @@ section#tweets-container {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 1.5em;
+  padding: 1.5rem;
 }
 
 article.tweet {
   border-style: solid;
   border-width: thick;
-  padding: 1em;
+  padding: 1rem;
   margin-bottom: 20px;
 }
 
@@ -29,6 +29,11 @@ article.tweet:hover {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+.user-avatar {
+  display: flex;
+  margin-top: 0;
 }
 
 .user-name {
@@ -66,8 +71,9 @@ i:hover {
 span.timeago {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 60%;
+  padding-left: 0.5rem;
 }
 
 i.fas.fa-retweet {
-  padding: 0.5em;
+  padding: 0.5rem;
 }

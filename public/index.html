@@ -57,11 +57,11 @@
     <nav>
       <span class="logo">tweeter</span>
       <span class="write-tweet">
-        Write a new tweet
+        <p>Write a new tweet</p>
         <i class="fas fa-angle-double-down" style="color: red"></i>
       </span>
     </nav>
-
+    <!-- Profile -->
     <header class="header">
       <div>
         <img src="/images/profile-hex.png" />
@@ -76,7 +76,7 @@
       <!-- Submitting a new tweet -->
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
-
+        <!-- Error messages -->
         <span class="empty-tweet" id="empty-tweet">
           <i class="fas fa-exclamation-triangle" style="color: red"></i>
           Please submit a tweet!
@@ -88,7 +88,7 @@
           tweet!
           <i class="fas fa-exclamation-triangle" style="color: red"></i>
         </span>
-
+        <!-- New tweets -->
         <form action="/tweets" method="POST" id="new-tweet-form">
           <label for="textarea">What are you humming about?</label>
           <textarea name="text" id="tweet-text"></textarea>

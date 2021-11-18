@@ -12,21 +12,13 @@ html {
   box-sizing: inherit;
 }
 
-/*
- * Global layout stuff
- */
-
 body {
   color: #545149;
   background-color: #f4f1ec;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 300;
 }
-
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
 
 main {
   display: flex;
@@ -37,16 +29,66 @@ main {
 }
 
 @media only screen and (min-width: 1024px) {
+  nav {
+    color: #ffffff;
+    background-color: #4056a1;
+  }
+
+  /* Profile */
   .header {
     float: left;
     width: 40%;
+    height: 100%;
     position: fixed;
-    height: 600px;
   }
+
+  /* Tweets */
   .container {
     float: right;
     width: 60%;
     flex-direction: column;
     margin-top: 120px;
+  }
+}
+
+@media only screen and (min-width: 620px) and (max-width: 1024px) {
+  nav {
+    color: #ffffff;
+    background-color: #4056a1;
+  }
+  /* Profile */
+  .header {
+    float: left;
+    width: 40%;
+    height: 100%;
+    position: fixed;
+  }
+
+  /* Tweets */
+  .container {
+    float: right;
+    width: 60%;
+    flex-direction: column;
+    margin-top: 120px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  nav {
+    color: #545149;
+    background-color: #f4f1ec;
+    background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+  }
+
+  nav.span {
+    padding: 1rem;
+  }
+
+  .header {
+    margin-top: 100px;
+  }
+
+  body {
+    font-size: 1rem;
   }
 }
