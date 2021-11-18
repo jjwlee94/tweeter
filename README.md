@@ -6,13 +6,13 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Final Product
 
-**Main page while hovering over like button**
+**Main page while hovering over the like button**
 !["Screenshot of the main page"](https://github.com/jjwlee94/tweeter/blob/master/docs/main-page-hover.png)
 
-**Displaying error message when no tweet is submitted**
+**Displaying an error message when no tweet is submitted**
 !["Screenshot of the error message for no tweet"](https://github.com/jjwlee94/tweeter/blob/master/docs/error-no-tweet.png)
 
-**Displaying error message when tweet character limit is exceeded**
+**Displaying an error message when the tweet character limit is exceeded**
 !["Screenshot of the error message for long tweet"](https://github.com/jjwlee94/tweeter/blob/master/docs/error-long-tweet.png)
 
 **Main page view on a mobile device**
