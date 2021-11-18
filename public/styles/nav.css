@@ -16,12 +16,13 @@ span {
   padding: 1.5em;
 }
 
-.a {
+.logo {
   display: flex;
   align-self: center;
+  font-size: 120%;
 }
 
-.b {
+.write-tweet {
   display: flex;
   flex-direction: column;
   align-items: center;
