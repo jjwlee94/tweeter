@@ -7,19 +7,19 @@ This repository is the starter code for the project: Students will fork and clon
 ## Final Product
 
 **Main page while hovering over the like button**
-!["Screenshot of the main page"](https://github.com/jjwlee94/tweeter/blob/master/docs/main-page-hover.png)
+!["Screenshot of the main page"](https://github.com/jjwlee94/tweeter/blob/master/docs/new-main-page-hover.png)
 
 **Displaying an error message when no tweet is submitted**
-!["Screenshot of the error message for no tweet"](https://github.com/jjwlee94/tweeter/blob/master/docs/error-no-tweet.png)
+!["Screenshot of the error message for no tweet"](https://github.com/jjwlee94/tweeter/blob/master/docs/new-error-no-tweet.png)
 
 **Displaying an error message when the tweet character limit is exceeded**
-!["Screenshot of the error message for long tweet"](https://github.com/jjwlee94/tweeter/blob/master/docs/error-long-tweet.png)
+!["Screenshot of the error message for long tweet"](https://github.com/jjwlee94/tweeter/blob/master/docs/new-error-long-tweet.png)
 
 **Main page view on a mobile device**
-!["Screenshot of the main page with a smartphone"](https://github.com/jjwlee94/tweeter/blob/master/docs/smartphone-main-page.png)
+!["Screenshot of the main page with a smartphone"](https://github.com/jjwlee94/tweeter/blob/master/docs/new-smartphone-main-page.png)
 
 **List of tweets on a mobile device**
-!["Screenshot of tweets with a smartphone"](https://github.com/jjwlee94/tweeter/blob/master/docs/smartphone-tweets.png)
+!["Screenshot of tweets with a smartphone"](https://github.com/jjwlee94/tweeter/blob/master/docs/new-smartphone-tweets.png)
 
 ## Getting Started
 
