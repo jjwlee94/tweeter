@@ -5,6 +5,7 @@ nav {
   justify-content: space-between;
   position: fixed;
   top: 0;
+  background-image: url("https://www.transparenttextures.com/patterns/bright-squares.png");
 }
 
 /* Contents */

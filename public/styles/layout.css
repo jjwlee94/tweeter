@@ -75,8 +75,8 @@ main {
 
 @media only screen and (max-width: 620px) {
   nav {
-    color: #545149;
-    background-color: #f4f1ec;
+    color: #ffffff;
+    background-color: #4056a1;
     background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
   }
 
@@ -86,6 +86,11 @@ main {
 
   .header {
     margin-top: 100px;
+    background-color: #4056a1;
+  }
+
+  h2.name {
+    color: #ffffff;
   }
 
   body {
